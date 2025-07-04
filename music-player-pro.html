@@ -791,18 +791,19 @@
         }
         
         updatePlayButton() {
-          const playBtns = document.querySelectorAll('[data-icon="Play"]');
-          playBtns.forEach(btn => {
-            const svg = btn.querySelector('svg');
-            if (svg) {
-              if (this.isPlaying) {
-                svg.innerHTML = '<path d="M216,48V208a16,16,0,0,1-16,16H160a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h40A16,16,0,0,1,216,48ZM96,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V48A16,16,0,0,0,96,32Z"></path>';
-              } else {
-                svg.innerHTML = '<path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"></path>';
-              }
+          // Update main play button icon - use more specific selector
+          const mainPlayBtnSvg = document.querySelector('#main-play-btn svg');
+          if (mainPlayBtnSvg) {
+            if (this.isPlaying) {
+              // Pause icon (two rectangles)
+              mainPlayBtnSvg.innerHTML = '<path d="M216,48V208a16,16,0,0,1-16,16H160a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h40A16,16,0,0,1,216,48ZM96,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V48A16,16,0,0,0,96,32Z"></path>';
+            } else {
+              // Play icon (triangle)
+              mainPlayBtnSvg.innerHTML = '<path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"></path>';
             }
-          });
+          }
           
+          // Update main play button text
           const playBtnText = document.getElementById('main-play-text');
           if (playBtnText) {
             playBtnText.textContent = this.isPlaying ? 'Pause' : 'Play';
