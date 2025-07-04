@@ -1,4 +1,4 @@
-THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -11,6 +11,17 @@ THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
 
     <title>🎵 Music Player Pro - Real Audio</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Mobile optimization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Music Player Pro">
+    <meta name="theme-color" content="#137000">
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <style>
@@ -193,10 +204,10 @@ THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
                 <div class="bar"></div>
               </div>
             </div>
-            <div class="flex flex-col justify-center">
-              <p class="text-[#0f1d0c] text-lg font-display font-semibold leading-normal line-clamp-1 current-track-title">🎶 Ready for Real Music!</p>
-              <p class="text-[#54a145] text-sm font-body font-medium leading-normal line-clamp-2 current-track-artist">Click "Add Your Music" to upload your songs</p>
-            </div>
+                         <div class="flex flex-col justify-center">
+               <p class="text-[#0f1d0c] text-lg font-display font-semibold leading-normal line-clamp-1 current-track-title">Chill Jazz Vibes</p>
+               <p class="text-[#54a145] text-sm font-body font-medium leading-normal line-clamp-2 current-track-artist">Demo Artist</p>
+             </div>
           </div>
           <div class="shrink-0">
             <div class="text-[#0f1d0c] flex size-8 items-center justify-center control-btn track-play-btn bg-white shadow-md" data-icon="Play" data-size="24px" data-weight="regular" data-track="0">
@@ -723,6 +734,19 @@ THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
       // Initialize the music player when the page loads
       document.addEventListener('DOMContentLoaded', () => {
         new MusicPlayer();
+        
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+              .then((registration) => {
+                console.log('SW registered: ', registration);
+              })
+              .catch((registrationError) => {
+                console.log('SW registration failed: ', registrationError);
+              });
+          });
+        }
       });
     </script>
   </body>
