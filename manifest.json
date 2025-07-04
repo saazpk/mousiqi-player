@@ -1,6 +1,6 @@
 {
-  "name": "Music Player Pro",
-  "short_name": "MusicPro",
+  "name": "Mausiqi Player",
+  "short_name": "Mausiqi",
   "description": "Professional music player with real audio playback",
   "start_url": "/music-player-pro.html",
   "display": "standalone",

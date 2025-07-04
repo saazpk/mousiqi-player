@@ -1,5 +1,5 @@
-// Service Worker for Music Player Pro PWA
-const CACHE_NAME = 'music-player-pro-v1';
+// Service Worker for Mausiqi Player PWA
+const CACHE_NAME = 'mausiqi-player-v1';
 const urlsToCache = [
   '/music-player-pro.html',
   '/manifest.json',

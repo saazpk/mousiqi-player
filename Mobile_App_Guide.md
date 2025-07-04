@@ -30,7 +30,7 @@ Convert your HTML to native Android/iOS apps:
 npm install -g @capacitor/cli @capacitor/core
 
 # Create new project
-npx cap init "Music Player Pro" com.yourname.musicplayer
+npx cap init "Mausiqi Player" com.yourname.musicplayer
 
 # Add platforms
 npx cap add android
@@ -62,7 +62,7 @@ Similar to Capacitor but older:
 npm install -g cordova
 
 # Create project
-cordova create MusicPlayerApp com.yourname.musicplayer "Music Player Pro"
+cordova create MusicPlayerApp com.yourname.musicplayer "Mausiqi Player"
 
 # Add platforms
 cordova platform add android
