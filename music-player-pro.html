@@ -180,7 +180,7 @@
           </div>
           
           <div class="flex items-center gap-3">
-            <button id="upload-btn" class="upload-btn text-white px-4 py-2 font-display text-sm font-semibold">
+            <button id="upload-btn" class="upload-btn text-white px-4 py-2 font-display text-sm font-semibold" aria-label="Add your music files">
               📁 Add Your Music
             </button>
             <div class="text-[#0f1d0c]" data-icon="UserCircle" data-size="24px" data-weight="regular">
@@ -205,8 +205,8 @@
               </div>
             </div>
                          <div class="flex flex-col justify-center">
-               <p class="text-[#0f1d0c] text-lg font-display font-semibold leading-normal line-clamp-1 current-track-title">Chill Jazz Vibes</p>
-               <p class="text-[#54a145] text-sm font-body font-medium leading-normal line-clamp-2 current-track-artist">Demo Artist</p>
+               <p class="text-[#0f1d0c] text-lg font-display font-semibold leading-normal line-clamp-1 current-track-title">Chill Ambient Demo</p>
+               <p class="text-[#54a145] text-sm font-body font-medium leading-normal line-clamp-2 current-track-artist">Demo Track</p>
              </div>
           </div>
           <div class="shrink-0">
@@ -262,7 +262,7 @@
         <!-- Control Buttons -->
         <div class="@container">
           <div class="gap-3 px-4 pb-4 grid-cols-[repeat(auto-fit, minmax(80px,_1fr))] grid">
-            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="shuffle-btn">
+            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="shuffle-btn" role="button" aria-label="Toggle shuffle mode" tabindex="0">
               <div class="rounded-full bg-white shadow-lg p-3" id="shuffle-btn-bg">
                 <div class="text-[#0f1d0c]" data-icon="Shuffle" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
@@ -272,7 +272,7 @@
               </div>
               <p class="text-[#0f1d0c] text-xs font-display font-medium leading-normal">Shuffle</p>
             </div>
-            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="back-btn">
+            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="back-btn" role="button" aria-label="Previous track" tabindex="0">
               <div class="rounded-full bg-white shadow-lg p-3">
                 <div class="text-[#0f1d0c]" data-icon="Rewind" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
@@ -282,7 +282,7 @@
               </div>
               <p class="text-[#0f1d0c] text-xs font-display font-medium leading-normal">Previous</p>
             </div>
-            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="main-play-btn">
+            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="main-play-btn" role="button" aria-label="Play or pause music" tabindex="0">
               <div class="rounded-full bg-gradient-to-r from-[#54a145] to-[#137000] shadow-xl p-4">
                 <div class="text-white" data-icon="Play" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
@@ -292,7 +292,7 @@
               </div>
               <p class="text-white text-xs font-display font-semibold leading-normal" id="main-play-text">Play</p>
             </div>
-            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="next-btn">
+            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="next-btn" role="button" aria-label="Next track" tabindex="0">
               <div class="rounded-full bg-white shadow-lg p-3">
                 <div class="text-[#0f1d0c]" data-icon="FastForward" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
@@ -302,7 +302,7 @@
               </div>
               <p class="text-[#0f1d0c] text-xs font-display font-medium leading-normal">Next</p>
             </div>
-            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="repeat-btn">
+            <div class="flex flex-col items-center gap-2 py-3 text-center control-btn" id="repeat-btn" role="button" aria-label="Toggle repeat mode" tabindex="0">
               <div class="rounded-full bg-white shadow-lg p-3" id="repeat-btn-bg">
                 <div class="text-[#0f1d0c]" data-icon="Repeat" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
@@ -332,24 +332,24 @@
           this.audio = document.getElementById('audio-player');
           this.fileInput = document.getElementById('file-input');
           
-          // Sample demo tracks - real audio files from public sources
+          // Sample demo tracks - working audio files
           this.demoTracks = [
             {
-              title: "Chill Jazz Vibes",
-              artist: "Demo Artist",
-              url: "https://www.soundjay.com/misc/sounds/1_hour_of_rain.mp3",
+              title: "Chill Ambient Demo",
+              artist: "Demo Track",
+              url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
               type: "demo"
             },
             {
-              title: "Ocean Waves",
-              artist: "Nature Sounds",
-              url: "https://www.soundjay.com/misc/sounds/waves.wav",
-              type: "demo"
-            },
-            {
-              title: "Classical Piano",
+              title: "Classical Sample",
               artist: "Public Domain",
-              url: "https://www.soundjay.com/misc/sounds/piano.mp3",
+              url: "https://file-examples.com/storage/fef68c48e756dcde1aa33cd/2017/11/file_example_MP3_700KB.mp3",
+              type: "demo"
+            },
+            {
+              title: "Nature Sounds",
+              artist: "Demo Audio",
+              url: "https://www.kozco.com/tech/organfinale.mp3",
               type: "demo"
             }
           ];
@@ -405,9 +405,23 @@
           });
           
           this.audio.addEventListener('error', (e) => {
-            this.showNotification('Error loading audio file', 'error');
+            const track = this.tracks[this.currentTrack];
+            this.showNotification(`⚠️ Error loading: ${track ? track.title : 'Unknown track'}`, 'error');
             console.error('Audio error:', e);
+            
+            // Try next track if available
+            if (this.tracks.length > 1) {
+              setTimeout(() => this.nextTrack(), 2000);
+            }
           });
+          
+          // Media Session API for lock screen controls
+          if ('mediaSession' in navigator) {
+            navigator.mediaSession.setActionHandler('play', () => this.togglePlay());
+            navigator.mediaSession.setActionHandler('pause', () => this.togglePlay());
+            navigator.mediaSession.setActionHandler('previoustrack', () => this.previousTrack());
+            navigator.mediaSession.setActionHandler('nexttrack', () => this.nextTrack());
+          }
         }
         
         setupEventListeners() {
@@ -428,6 +442,115 @@
           
           // Progress bar
           document.getElementById('progress-bar').addEventListener('click', (e) => this.seek(e));
+          
+          // Keyboard shortcuts
+          document.addEventListener('keydown', (e) => this.handleKeyboard(e));
+          
+          // Load saved settings
+          this.loadSettings();
+        }
+        
+        handleKeyboard(e) {
+          // Prevent default only for our shortcuts
+          switch(e.key) {
+            case ' ':
+              if (e.target === document.body) {
+                e.preventDefault();
+                this.togglePlay();
+              }
+              break;
+            case 'ArrowLeft':
+              if (e.target === document.body) {
+                e.preventDefault();
+                this.previousTrack();
+              }
+              break;
+            case 'ArrowRight':
+              if (e.target === document.body) {
+                e.preventDefault();
+                this.nextTrack();
+              }
+              break;
+            case 'ArrowUp':
+              if (e.target === document.body) {
+                e.preventDefault();
+                this.volume = Math.min(1, this.volume + 0.1);
+                this.audio.volume = this.volume;
+                this.updateVolumeDisplay();
+                this.showNotification(`Volume: ${Math.round(this.volume * 100)}%`, 'info');
+              }
+              break;
+            case 'ArrowDown':
+              if (e.target === document.body) {
+                e.preventDefault();
+                this.volume = Math.max(0, this.volume - 0.1);
+                this.audio.volume = this.volume;
+                this.updateVolumeDisplay();
+                this.showNotification(`Volume: ${Math.round(this.volume * 100)}%`, 'info');
+              }
+              break;
+            case 'r':
+              if (e.target === document.body) {
+                e.preventDefault();
+                this.toggleRepeat();
+              }
+              break;
+            case 's':
+              if (e.target === document.body) {
+                e.preventDefault();
+                this.toggleShuffle();
+              }
+              break;
+          }
+        }
+        
+        saveSettings() {
+          const settings = {
+            volume: this.volume,
+            isRepeat: this.isRepeat,
+            isShuffle: this.isShuffle
+          };
+          localStorage.setItem('musicPlayerSettings', JSON.stringify(settings));
+        }
+        
+        loadSettings() {
+          try {
+            const saved = localStorage.getItem('musicPlayerSettings');
+            if (saved) {
+              const settings = JSON.parse(saved);
+              this.volume = settings.volume || 0.7;
+              this.isRepeat = settings.isRepeat || false;
+              this.isShuffle = settings.isShuffle || false;
+              
+              // Apply loaded settings
+              this.audio.volume = this.volume;
+              this.updateVolumeDisplay();
+              
+              // Update UI for repeat/shuffle
+              if (this.isRepeat) this.updateRepeatUI();
+              if (this.isShuffle) this.updateShuffleUI();
+            }
+          } catch (e) {
+            console.warn('Could not load settings:', e);
+          }
+        }
+        
+        updateRepeatUI() {
+          const repeatBtnBg = document.getElementById('repeat-btn-bg');
+          if (repeatBtnBg) {
+            repeatBtnBg.style.background = this.isRepeat ? 
+              'linear-gradient(135deg, #54a145 0%, #137000 100%)' : '#ffffff';
+            repeatBtnBg.style.color = this.isRepeat ? '#ffffff' : '#0f1d0c';
+          }
+        }
+        
+        updateShuffleUI() {
+          const shuffleBtnBg = document.getElementById('shuffle-btn-bg');
+          if (shuffleBtnBg) {
+            shuffleBtnBg.style.background = this.isShuffle ? 
+              'linear-gradient(135deg, #54a145 0%, #137000 100%)' : '#ffffff';
+            shuffleBtnBg.style.color = this.isShuffle ? '#ffffff' : '#0f1d0c';
+          }
         }
         
         setupVolumeControl() {
@@ -585,23 +708,15 @@
         
         toggleRepeat() {
           this.isRepeat = !this.isRepeat;
-          const repeatBtnBg = document.getElementById('repeat-btn-bg');
-          if (repeatBtnBg) {
-            repeatBtnBg.style.background = this.isRepeat ? 
-              'linear-gradient(135deg, #54a145 0%, #137000 100%)' : '#ffffff';
-            repeatBtnBg.style.color = this.isRepeat ? '#ffffff' : '#0f1d0c';
-          }
+          this.updateRepeatUI();
+          this.saveSettings();
           this.showNotification(`🔁 Repeat ${this.isRepeat ? 'ON' : 'OFF'}`, 'info');
         }
         
         toggleShuffle() {
           this.isShuffle = !this.isShuffle;
-          const shuffleBtnBg = document.getElementById('shuffle-btn-bg');
-          if (shuffleBtnBg) {
-            shuffleBtnBg.style.background = this.isShuffle ? 
-              'linear-gradient(135deg, #54a145 0%, #137000 100%)' : '#ffffff';
-            shuffleBtnBg.style.color = this.isShuffle ? '#ffffff' : '#0f1d0c';
-          }
+          this.updateShuffleUI();
+          this.saveSettings();
           this.showNotification(`🔀 Shuffle ${this.isShuffle ? 'ON' : 'OFF'}`, 'info');
         }
         
@@ -625,6 +740,7 @@
           this.volume = percentage;
           this.audio.volume = this.volume;
           this.updateVolumeDisplay();
+          this.saveSettings();
         }
         
         updateVolumeDisplay() {
@@ -655,6 +771,32 @@
               item.classList.remove('active');
             }
           });
+          
+          // Update Media Session metadata for lock screen
+          if ('mediaSession' in navigator) {
+            navigator.mediaSession.metadata = new MediaMetadata({
+              title: track.title,
+              artist: track.artist,
+              album: 'Music Player Pro',
+              artwork: [
+                { 
+                  src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=96&h=96&fit=crop', 
+                  sizes: '96x96', 
+                  type: 'image/jpeg' 
+                },
+                { 
+                  src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=256&h=256&fit=crop', 
+                  sizes: '256x256', 
+                  type: 'image/jpeg' 
+                },
+                { 
+                  src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=512&h=512&fit=crop', 
+                  sizes: '512x512', 
+                  type: 'image/jpeg' 
+                }
+              ]
+            });
+          }
         }
         
         updatePlayButton() {
