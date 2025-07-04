@@ -299,29 +299,7 @@
           this.audio = document.getElementById('audio-player');
           this.fileInput = document.getElementById('file-input');
           
-          // Sample demo tracks - working audio files
-          this.demoTracks = [
-            {
-              title: "Chill Ambient Demo",
-              artist: "Demo Track",
-              url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
-              type: "demo"
-            },
-            {
-              title: "Classical Sample",
-              artist: "Public Domain",
-              url: "https://file-examples.com/storage/fef68c48e756dcde1aa33cd/2017/11/file_example_MP3_700KB.mp3",
-              type: "demo"
-            },
-            {
-              title: "Nature Sounds",
-              artist: "Demo Audio",
-              url: "https://www.kozco.com/tech/organfinale.mp3",
-              type: "demo"
-            }
-          ];
-          
-          this.tracks = [...this.demoTracks]; // Start with demo tracks
+          this.tracks = []; // Start with empty playlist
           this.userTracks = [];
           
           this.init();
