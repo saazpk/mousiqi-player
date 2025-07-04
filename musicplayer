@@ -12,34 +12,6 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <style>
-      .track-item {
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-      }
-      .track-item:hover {
-        background-color: #e8f4e6;
-      }
-      .track-item.active {
-        background-color: #d2eacd;
-      }
-      .control-btn {
-        cursor: pointer;
-        transition: transform 0.1s ease;
-      }
-      .control-btn:hover {
-        transform: scale(1.05);
-      }
-      .control-btn:active {
-        transform: scale(0.95);
-      }
-      .progress-bar {
-        cursor: pointer;
-      }
-      .volume-slider {
-        cursor: pointer;
-      }
-    </style>
   </head>
   <body>
     <div
@@ -67,19 +39,19 @@
             </button>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="0">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
           <div class="flex items-center gap-4">
             <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14 current-track-image"
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBckwc9qviWABFiPr5AwGwkDIySJ-m1IfF33O4BrQ9eOUnFEtnMeZsgeToPqapqaa5Td50YMz_iwqsCcz2RtF0e4PmuROzaldfi3Q6tKVej_lW079gmp4211MgrD_cub22w38drLZKa5hZqnhJ4Txk89f16jLrI-fbUFgVOGuwaNTxXC9Rcj9bgauOnkINuZ-4d2QG1_WHXStIIFD5vizdJ-SXgcolQZBkBsjdBILlYdKc3viEV6VfikGzhATO6fxRlye8za7oecLc");'
             ></div>
             <div class="flex flex-col justify-center">
-              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1 current-track-title">Ho Hey</p>
-              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2 current-track-artist">The Lumineers</p>
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Ho Hey</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">The Lumineers</p>
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -88,7 +60,7 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="1">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
           <div class="flex items-center gap-4">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
@@ -100,7 +72,7 @@
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="1">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -109,7 +81,7 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="2">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
           <div class="flex items-center gap-4">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
@@ -121,7 +93,7 @@
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="2">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -130,7 +102,8 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="3">class="flex items-center gap-4">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAv2yAHiW0kVOvcDA1MFusVxJ4ZP12qZlO5KKVl_eyF6mkuOZHxPXSQ55Mnjj-LJOJTF-xTym55ZbqpmUghIe3hklqgvKDVST4lZ1oCXYi3ZAiVfGO0qdU5Tq5bgh5BsgXZTGL81d1braJbb3DY_NDr7mGoCSQzrDKe1G7EydL0-SEFkhY7aKEfge1KU9pIxG8uGa8M6fwwTfF_yKzd12w89w_-TcOghfo15smcGkK0pZjvSSJAKcoD_c8jVNlsBlJWAyZgaap9tKk");'
@@ -141,7 +114,7 @@
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="3">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -150,7 +123,8 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="4">class="flex items-center gap-4">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDobS3u7NhKWNBWTnQtfQtVATMoJgzPVIA1Kf6LVToTf0gCQ6oHY4DaD-A_2jYPVw4gLONTRjhEXfSHDMZl2y04uduEccAYaoWWt48kaYduZbEUJneqoInwjV4dT1ORbYuVnVVh89NA2lFwavGYxEc4Sscmt-6aF706sSQ0oDxYDFJPsn_VZ5t8stbGAio9MYGigrLBHdGAm3NMI84Zngb1hRf_Fp686Bkq6GUEcAAZtSIfk7nzWKpTrGZlK6S1FE4kCwpE_F7z_Ms");'
@@ -161,7 +135,7 @@
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="4">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -170,7 +144,8 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="5">class="flex items-center gap-4">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBV5P0gcObwFOZkQ0iPf3C3j2RdRo2OGvRGBAOtFQHBL7dKxIGlzJOLZV6r71WniaqWdspBLMQ-FGOuNKFbNGmnjOYuHtO0oXKsJrigwX7F_BKPftp1BIuY__iGlzDv0SBHeqywRq6tWDLmp_xBdpxqEDg-Jg0ZYXmCiIZ94gIwiy1rb23MKem68h9xe_hGzpPXRiy4Xpg81EjToSvJnMgsTM848l5Jjkg47LChmWT8RAK-DNKbXqX3UYEUe8u2bP3V-iL2SP4ozpQ");'
@@ -181,7 +156,7 @@
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="5">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -190,7 +165,8 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="6">class="flex items-center gap-4">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDnYzu5L5dTIpDSOnqXd5cW_T3Qf0ccI3LyKn3JpoBC07rsbEuJuA8xhEn6yYuZhEUOW08v3h2nATtIJ4iKyZhYeee1eY7i75TUOaktk2_jSMGwVq7E6HWOa2tXngz4BIHPzr_1l0QCzOT7N0e8oDBvZNKr4VCakGjxe-FDqFNzz-Q43jAlGVq6hlMDc0bSeEesLhGNP6IAnpfTWNzaJlFhgXxvkGaXfi6O9iaa6hBeSAp7yFZPbIEEyFNhE7NUJBcQlY2exOBfKc");'
@@ -201,7 +177,7 @@
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="6">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -210,7 +186,8 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="7">class="flex items-center gap-4">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHjhIHjgiGVu8fXxKy1nDJfztrQPfl2XIUmh7VeseAYaRhkEke_FZXeGcUMjG4ILoHHE40NEscn_J1OE-siqNsH2i5GyUa6qSmJ3rrIhKIEIcunSoH6HVy6RcXHl8kZK4kd3gpl5Gn0ED-Q9mj17RXJzsFC_SamUuoQdLr4XfYWDaI_oIBOmWlFUEY_dtNOmkrDHb0SUjHOAR29b8PfIAw0sO0B6V2AgpTc8CG5Oz-a3z7Lhq6-ZGyk5S5_KMhtGcoXhQxhqaO3dI");'
@@ -221,7 +198,7 @@
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="7">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -230,7 +207,8 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="8">class="flex items-center gap-4">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDmd2dAiC424OLjIEKXA7dituixQf8IDO6xj06gUxOxD9Js9mVvObY30d57E306192RmEQJPrtP0m-NqCCqnLaab8ySu0_QCYcvhT6CaRFkqYrWpG8lBPDpleIRhaP_SW1GZMOX6ymnIT4dt5_BJ4mffPl64t4_1OdMRiDm6PFvEWXwRLkJ5He3LBpIs-_kMHTwn0lsI2efAaT6gA4dhljj2jRa4tmGqCOjHbX7QymOXxemjCieWjs5xaiITPoV6bMUROLSBYmxXIA");'
@@ -241,7 +219,7 @@
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="8">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -250,7 +228,8 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between track-item" data-track="9">class="flex items-center gap-4">
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
               style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0JAvV4vAQX9iTvPLm61k2e5DTYFdzuSg2JJ6-ZJy-G4H6aT8Lsw7lS1tuqTjGzcwqY78zdS7Ea_Reed5FmSbjLSpByOpXCGC6UxlJtrmxz-CuJonPZtP9Do04zFAhH5Uc_o5FcaGCMOYyb565CvP-ETgej9NmNBPFQvC9abINy9ObCP-PM2Rp5fbDSJBJxcD0ZL-Y2Q4holNwPmTVh2R39m_P_M18jVs8K6wWmeMURg9Q-liJI5wE9iFKFk3AM4172juVkgIDOcQ");'
@@ -261,7 +240,7 @@
             </div>
           </div>
           <div class="shrink-0">
-            <div class="text-[#0f1d0c] flex size-7 items-center justify-center control-btn track-play-btn" data-icon="Play" data-size="24px" data-weight="regular" data-track="9">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
               <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                 <path
                   d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
@@ -275,21 +254,21 @@
         <div class="@container">
           <div class="relative flex w-full flex-col items-start justify-between gap-3 p-4 @[480px]:flex-row @[480px]:items-center">
             <div class="flex w-full shrink-[3] items-center justify-between">
-              <p class="text-[#0f1d0c] text-base font-medium leading-normal" id="time-display">0:30 / 3:15</p>
-              <p class="text-[#0f1d0c] text-sm font-normal leading-normal @[480px]:hidden" id="volume-display-mobile">50</p>
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal">0:30 / 3:15</p>
+              <p class="text-[#0f1d0c] text-sm font-normal leading-normal @[480px]:hidden">50</p>
             </div>
             <div class="flex h-4 w-full items-center gap-4">
-              <div class="flex h-1 flex-1 rounded-sm bg-[#d2eacd] progress-bar" id="progress-bar">
-                <div class="h-full w-[32%] rounded-sm bg-[#137000]" id="progress-fill"></div>
-                <div class="relative"><div class="absolute -left-2 -top-1.5 size-4 rounded-full bg-[#137000]" id="progress-slider"></div></div>
+              <div class="flex h-1 flex-1 rounded-sm bg-[#d2eacd]">
+                <div class="h-full w-[32%] rounded-sm bg-[#137000]"></div>
+                <div class="relative"><div class="absolute -left-2 -top-1.5 size-4 rounded-full bg-[#137000]"></div></div>
               </div>
-              <p class="text-[#0f1d0c] text-sm font-normal leading-normal hidden @[480px]:block" id="volume-display">50</p>
+              <p class="text-[#0f1d0c] text-sm font-normal leading-normal hidden @[480px]:block">50</p>
             </div>
           </div>
         </div>
         <div class="@container">
           <div class="gap-2 px-4 grid-cols-[repeat(auto-fit, minmax(80px,_1fr))] grid">
-            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center control-btn" id="back-btn">
+            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center">
               <div class="rounded-full bg-[#e8f4e6] p-2.5">
                 <div class="text-[#0f1d0c]" data-icon="Rewind" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
@@ -301,7 +280,7 @@
               </div>
               <p class="text-[#0f1d0c] text-sm font-medium leading-normal">Back</p>
             </div>
-            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center control-btn" id="main-play-btn">
+            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center">
               <div class="rounded-full bg-[#e8f4e6] p-2.5">
                 <div class="text-[#0f1d0c]" data-icon="Play" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
@@ -311,9 +290,9 @@
                   </svg>
                 </div>
               </div>
-              <p class="text-[#0f1d0c] text-sm font-medium leading-normal" id="main-play-text">Play</p>
+              <p class="text-[#0f1d0c] text-sm font-medium leading-normal">Play</p>
             </div>
-            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center control-btn" id="next-btn">
+            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center">
               <div class="rounded-full bg-[#e8f4e6] p-2.5">
                 <div class="text-[#0f1d0c]" data-icon="FastForward" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
@@ -325,8 +304,8 @@
               </div>
               <p class="text-[#0f1d0c] text-sm font-medium leading-normal">Next</p>
             </div>
-            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center control-btn" id="repeat-btn">
-              <div class="rounded-full bg-[#e8f4e6] p-2.5" id="repeat-btn-bg">
+            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center">
+              <div class="rounded-full bg-[#e8f4e6] p-2.5">
                 <div class="text-[#0f1d0c]" data-icon="Repeat" data-size="20px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
                     <path
@@ -378,240 +357,5 @@
         <div class="h-5 bg-[#f9fcf8]"></div>
       </div>
     </div>
-
-    <script>
-      // Music Player JavaScript Functionality
-      class MusicPlayer {
-        constructor() {
-          this.currentTrack = 0;
-          this.isPlaying = false;
-          this.currentTime = 0;
-          this.duration = 195; // 3:15 in seconds
-          this.volume = 50;
-          this.isRepeat = false;
-          
-          this.tracks = [
-            { title: "Ho Hey", artist: "The Lumineers", duration: 195, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBckwc9qviWABFiPr5AwGwkDIySJ-m1IfF33O4BrQ9eOUnFEtnMeZsgeToPqapqaa5Td50YMz_iwqsCcz2RtF0e4PmuROzaldfi3Q6tKVej_lW079gmp4211MgrD_cub22w38drLZKa5hZqnhJ4Txk89f16jLrI-fbUFgVOGuwaNTxXC9Rcj9bgauOnkINuZ-4d2QG1_WHXStIIFD5vizdJ-SXgcolQZBkBsjdBILlYdKc3viEV6VfikGzhATO6fxRlye8za7oecLc" },
-            { title: "Viva la Vida", artist: "Coldplay", duration: 242, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBmMYr82nlscPIuJa-DAyRBi5yuA8mnW-8_IhX_dCkLqz7oia8rpZ1IzGemWDrWkkEB_cRwxHbYs-2ROJohrfaQNEEORnPWN6zLAc_D49hNZP_p-AV7j9cQfyQNf_H4g164Xulsow67RTYIdPT1nMhWoiccYf1KAvL1ugjePNBH3LWarUMo3KOVe0nhDfHss0uoQPXbKufQ2w8Ygj6Q7OLRJCFoMqkZrBPytPMllK0zRwKr91l3N_Ik21SkDNDb22oZpo2J15hJKCc" },
-            { title: "Shape of You", artist: "Ed Sheeran", duration: 233, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAKu1XYSFxMs72ALlQrAC42DvhDyOclH6Q9toi3_JEsEUInSrzBHHpcy6IqJQo_H91RwFTiA1CiT9OwWSI1fhtJ20C4hbg-fSrMZmZnWEcUJp5slEvWiin6uYECeIgTL_ddyXfx3DjYZ70fShvGXy9REzDs-Fg5NrF60_82wa9Kwi5f9_vy23iA8AlZsHnyi_kPToI_eamkaQ-zKeYQo9bsOlZHZVPLyZ1TEyIRFtOulwrFewehV59f4Z24Pqy9IYexHKFSqN6Zajs" },
-            { title: "Shake It Off", artist: "Taylor Swift", duration: 219, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAv2yAHiW0kVOvcDA1MFusVxJ4ZP12qZlO5KKVl_eyF6mkuOZHxPXSQ55Mnjj-LJOJTF-xTym55ZbqpmUghIe3hklqgvKDVST4lZ1oCXYi3ZAiVfGO0qdU5Tq5bgh5BsgXZTGL81d1braJbb3DY_NDr7mGoCSQzrDKe1G7EydL0-SEFkhY7aKEfge1KU9pIxG8uGa8M6fwwTfF_yKzd12w89w_-TcOghfo15smcGkK0pZjvSSJAKcoD_c8jVNlsBlJWAyZgaap9tKk" },
-            { title: "Rolling in the Deep", artist: "Adele", duration: 228, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDobS3u7NhKWNBWTnQtfQtVATMoJgzPVIA1Kf6LVToTf0gCQ6oHY4DaD-A_2jYPVw4gLONTRjhEXfSHDMZl2y04uduEccAYaoWWt48kaYduZbEUJneqoInwjV4dT1ORbYuVnVVh89NA2lFwavGYxEc4Sscmt-6aF706sSQ0oDxYDFJPsn_VZ5t8stbGAio9MYGigrLBHdGAm3NMI84Zngb1hRf_Fp686Bkq6GUEcAAZtSIfk7nzWKpTrGZlK6S1FE4kCwpE_F7z_Ms" },
-            { title: "Believer", artist: "Imagine Dragons", duration: 204, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBV5P0gcObwFOZkQ0iPf3C3j2RdRo2OGvRGBAOtFQHBL7dKxIGlzJOLZV6r71WniaqWdspBLMQ-FGOuNKFbNGmnjOYuHtO0oXKsJrigwX7F_BKPftp1BIuY__iGlzDv0SBHeqywRq6tWDLmp_xBdpxqEDg-Jg0ZYXmCiIZ94gIwiy1rb23MKem68h9xe_hGzpPXRiy4Xpg81EjToSvJnMgsTM848l5Jjkg47LChmWT8RAK-DNKbXqX3UYEUe8u2bP3V-iL2SP4ozpQ" },
-            { title: "Sugar", artist: "Maroon 5", duration: 235, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCDnYzu5L5dTIpDSOnqXd5cW_T3Qf0ccI3LyKn3JpoBC07rsbEuJuA8xhEn6yYuZhEUOW08v3h2nATtIJ4iKyZhYeee1eY7i75TUOaktk2_jSMGwVq7E6HWOa2tXngz4BIHPzr_1l0QCzOT7N0e8oDBvZNKr4VCakGjxe-FDqFNzz-Q43jAlGVq6hlMDc0bSeEesLhGNP6IAnpfTWNzaJlFhgXxvkGaXfi6O9iaa6hBeSAp7yFZPbIEEyFNhE7NUJBcQlY2exOBfKc" },
-            { title: "Sorry", artist: "Justin Bieber", duration: 200, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDHjhIHjgiGVu8fXxKy1nDJfztrQPfl2XIUmh7VeseAYaRhkEke_FZXeGcUMjG4ILoHHE40NEscn_J1OE-siqNsH2i5GyUa6qSmJ3rrIhKIEIcunSoH6HVy6RcXHl8kZK4kd3gpl5Gn0ED-Q9mj17RXJzsFC_SamUuoQdLr4XfYWDaI_oIBOmWlFUEY_dtNOmkrDHb0SUjHOAR29b8PfIAw0sO0B6V2AgpTc8CG5Oz-a3z7Lhq6-ZGyk5S5_KMhtGcoXhQxhqaO3dI" },
-            { title: "Umbrella", artist: "Rihanna", duration: 263, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDmd2dAiC424OLjIEKXA7dituixQf8IDO6xj06gUxOxD9Js9mVvObY30d57E306192RmEQJPrtP0m-NqCCqnLaab8ySu0_QCYcvhT6CaRFkqYrWpG8lBPDpleIRhaP_SW1GZMOX6ymnIT4dt5_BJ4mffPl64t4_1OdMRiDm6PFvEWXwRLkJ5He3LBpIs-_kMHTwn0lsI2efAaT6gA4dhljj2jRa4tmGqCOjHbX7QymOXxemjCieWjs5xaiITPoV6bMUROLSBYmxXIA" },
-            { title: "Hotline Bling", artist: "Drake", duration: 267, image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC0JAvV4vAQX9iTvPLm61k2e5DTYFdzuSg2JJ6-ZJy-G4H6aT8Lsw7lS1tuqTjGzcwqY78zdS7Ea_Reed5FmSbjLSpByOpXCGC6UxlJtrmxz-CuJonPZtP9Do04zFAhH5Uc_o5FcaGCMOYyb565CvP-ETgej9NmNBPFQvC9abINy9ObCP-PM2Rp5fbDSJBJxcD0ZL-Y2Q4holNwPmTVh2R39m_P_M18jVs8K6wWmeMURg9Q-liJI5wE9iFKFk3AM4172juVkgIDOcQ" }
-          ];
-          
-          this.init();
-        }
-        
-        init() {
-          this.updateCurrentTrackDisplay();
-          this.setupEventListeners();
-          this.updateProgressBar();
-          this.startTimer();
-        }
-        
-        setupEventListeners() {
-          // Main play button
-          const mainPlayBtn = document.getElementById('main-play-btn');
-          if (mainPlayBtn) {
-            mainPlayBtn.addEventListener('click', () => this.togglePlay());
-          }
-          
-          // Track play buttons
-          const trackPlayBtns = document.querySelectorAll('.track-play-btn');
-          trackPlayBtns.forEach((btn) => {
-            btn.addEventListener('click', () => {
-              const trackIndex = parseInt(btn.getAttribute('data-track'));
-              this.playTrack(trackIndex);
-            });
-          });
-          
-          // Track items (click to play)
-          const trackItems = document.querySelectorAll('.track-item');
-          trackItems.forEach((item) => {
-            item.addEventListener('click', (e) => {
-              // Don't trigger if clicking on the play button
-              if (!e.target.closest('.track-play-btn')) {
-                const trackIndex = parseInt(item.getAttribute('data-track'));
-                this.playTrack(trackIndex);
-              }
-            });
-          });
-          
-          // Control buttons
-          const backBtn = document.getElementById('back-btn');
-          const nextBtn = document.getElementById('next-btn');
-          const repeatBtn = document.getElementById('repeat-btn');
-          
-          if (backBtn) backBtn.addEventListener('click', () => this.previousTrack());
-          if (nextBtn) nextBtn.addEventListener('click', () => this.nextTrack());
-          if (repeatBtn) repeatBtn.addEventListener('click', () => this.toggleRepeat());
-          
-          // Progress bar click
-          const progressBar = document.getElementById('progress-bar');
-          if (progressBar) {
-            progressBar.addEventListener('click', (e) => this.seek(e));
-          }
-        }
-        
-        togglePlay() {
-          this.isPlaying = !this.isPlaying;
-          this.updatePlayButton();
-          
-          if (this.isPlaying) {
-            console.log(`Playing: ${this.tracks[this.currentTrack].title}`);
-          } else {
-            console.log('Paused');
-          }
-        }
-        
-        playTrack(index) {
-          this.currentTrack = index;
-          this.currentTime = 0;
-          this.isPlaying = true;
-          this.duration = this.tracks[index].duration;
-          this.updateCurrentTrackDisplay();
-          this.updatePlayButton();
-          this.updateProgressBar();
-          console.log(`Now playing: ${this.tracks[index].title} by ${this.tracks[index].artist}`);
-        }
-        
-        nextTrack() {
-          this.currentTrack = (this.currentTrack + 1) % this.tracks.length;
-          this.currentTime = 0;
-          this.duration = this.tracks[this.currentTrack].duration;
-          this.updateCurrentTrackDisplay();
-          this.updateProgressBar();
-          
-          if (this.isPlaying) {
-            console.log(`Next track: ${this.tracks[this.currentTrack].title}`);
-          }
-        }
-        
-        previousTrack() {
-          this.currentTrack = this.currentTrack === 0 ? this.tracks.length - 1 : this.currentTrack - 1;
-          this.currentTime = 0;
-          this.duration = this.tracks[this.currentTrack].duration;
-          this.updateCurrentTrackDisplay();
-          this.updateProgressBar();
-          
-          if (this.isPlaying) {
-            console.log(`Previous track: ${this.tracks[this.currentTrack].title}`);
-          }
-        }
-        
-        toggleRepeat() {
-          this.isRepeat = !this.isRepeat;
-          const repeatBtnBg = document.getElementById('repeat-btn-bg');
-          if (repeatBtnBg) {
-            repeatBtnBg.style.backgroundColor = this.isRepeat ? '#137000' : '#e8f4e6';
-            repeatBtnBg.style.color = this.isRepeat ? '#ffffff' : '#0f1d0c';
-          }
-          console.log(`Repeat: ${this.isRepeat ? 'ON' : 'OFF'}`);
-        }
-        
-        seek(e) {
-          const progressBar = e.currentTarget;
-          const rect = progressBar.getBoundingClientRect();
-          const clickX = e.clientX - rect.left;
-          const progressBarWidth = rect.width;
-          const percentage = clickX / progressBarWidth;
-          
-          this.currentTime = Math.floor(this.duration * percentage);
-          this.updateProgressBar();
-        }
-        
-        updateCurrentTrackDisplay() {
-          const track = this.tracks[this.currentTrack];
-          
-          // Update main track display
-          const trackImage = document.querySelector('.current-track-image');
-          const trackTitle = document.querySelector('.current-track-title');
-          const trackArtist = document.querySelector('.current-track-artist');
-          
-          if (trackImage) trackImage.style.backgroundImage = `url("${track.image}")`;
-          if (trackTitle) trackTitle.textContent = track.title;
-          if (trackArtist) trackArtist.textContent = track.artist;
-          
-          // Update active track styling
-          document.querySelectorAll('.track-item').forEach((item, index) => {
-            if (index === this.currentTrack) {
-              item.classList.add('active');
-            } else {
-              item.classList.remove('active');
-            }
-          });
-        }
-        
-        updatePlayButton() {
-          const playBtns = document.querySelectorAll('[data-icon="Play"]');
-          playBtns.forEach(btn => {
-            const svg = btn.querySelector('svg');
-            if (svg) {
-              if (this.isPlaying) {
-                // Change to pause icon
-                svg.innerHTML = '<path d="M216,48V208a16,16,0,0,1-16,16H160a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h40A16,16,0,0,1,216,48ZM96,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V48A16,16,0,0,0,96,32Z"></path>';
-              } else {
-                // Change to play icon
-                svg.innerHTML = '<path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"></path>';
-              }
-            }
-          });
-          
-          // Update play button text
-          const playBtnText = document.getElementById('main-play-text');
-          if (playBtnText) {
-            playBtnText.textContent = this.isPlaying ? 'Pause' : 'Play';
-          }
-        }
-        
-        updateProgressBar() {
-          const progress = (this.currentTime / this.duration) * 100;
-          const progressFill = document.getElementById('progress-fill');
-          
-          if (progressFill) {
-            progressFill.style.width = `${Math.max(0, Math.min(100, progress))}%`;
-          }
-          
-          // Update time display
-          const timeDisplay = document.getElementById('time-display');
-          if (timeDisplay) {
-            const currentMinutes = Math.floor(this.currentTime / 60);
-            const currentSeconds = this.currentTime % 60;
-            const durationMinutes = Math.floor(this.duration / 60);
-            const durationSeconds = this.duration % 60;
-            timeDisplay.textContent = `${currentMinutes}:${currentSeconds.toString().padStart(2, '0')} / ${durationMinutes}:${durationSeconds.toString().padStart(2, '0')}`;
-          }
-        }
-        
-        startTimer() {
-          setInterval(() => {
-            if (this.isPlaying) {
-              this.currentTime++;
-              if (this.currentTime >= this.duration) {
-                if (this.isRepeat) {
-                  this.currentTime = 0;
-                } else {
-                  this.nextTrack();
-                  if (this.currentTrack === 0) {
-                    this.isPlaying = false;
-                    this.updatePlayButton();
-                  }
-                }
-              }
-              this.updateProgressBar();
-            }
-          }, 1000);
-        }
-      }
-      
-      // Initialize the music player when the page loads
-      document.addEventListener('DOMContentLoaded', () => {
-        new MusicPlayer();
-      });
-    </script>
   </body>
 </html>
