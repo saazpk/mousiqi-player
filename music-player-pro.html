@@ -184,7 +184,7 @@
       <div>
 
         <!-- Currently Playing Track -->
-        <div class="flex items-center gap-4 glass-effect mx-4 mt-4 mb-2 px-4 min-h-[80px] py-3 justify-between track-item current-track-display" data-track="0">
+        <div class="flex items-center gap-4 glass-effect mx-4 mt-4 mb-2 px-4 min-h-[80px] py-3 justify-between current-track-display">
           <div class="flex items-center gap-4">
             <div class="relative">
               <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl size-16 current-track-image shadow-lg" style='background-image: url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop");'></div>
@@ -754,8 +754,8 @@
           if (trackTitle) trackTitle.textContent = track.title;
           if (trackArtist) trackArtist.textContent = track.artist;
           
-          // Update active track styling
-          document.querySelectorAll('.track-item').forEach((item, index) => {
+          // Update active track styling - only target playlist items
+          document.querySelectorAll('#playlist-container .track-item').forEach((item, index) => {
             if (index === this.currentTrack) {
               item.classList.add('active');
             } else {
