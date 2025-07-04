@@ -1,0 +1,361 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#f9fcf8] justify-between group/design-root overflow-x-hidden"
+      style='font-family: Newsreader, "Noto Sans", sans-serif;'
+    >
+      <div>
+        <div class="flex items-center bg-[#f9fcf8] p-4 pb-2 justify-between">
+          <div class="text-[#0f1d0c] flex size-12 shrink-0 items-center" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+            </svg>
+          </div>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded h-12 bg-transparent text-[#0f1d0c] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-[#0f1d0c]" data-icon="UserCircle" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBckwc9qviWABFiPr5AwGwkDIySJ-m1IfF33O4BrQ9eOUnFEtnMeZsgeToPqapqaa5Td50YMz_iwqsCcz2RtF0e4PmuROzaldfi3Q6tKVej_lW079gmp4211MgrD_cub22w38drLZKa5hZqnhJ4Txk89f16jLrI-fbUFgVOGuwaNTxXC9Rcj9bgauOnkINuZ-4d2QG1_WHXStIIFD5vizdJ-SXgcolQZBkBsjdBILlYdKc3viEV6VfikGzhATO6fxRlye8za7oecLc");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Ho Hey</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">The Lumineers</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBmMYr82nlscPIuJa-DAyRBi5yuA8mnW-8_IhX_dCkLqz7oia8rpZ1IzGemWDrWkkEB_cRwxHbYs-2ROJohrfaQNEEORnPWN6zLAc_D49hNZP_p-AV7j9cQfyQNf_H4g164Xulsow67RTYIdPT1nMhWoiccYf1KAvL1ugjePNBH3LWarUMo3KOVe0nhDfHss0uoQPXbKufQ2w8Ygj6Q7OLRJCFoMqkZrBPytPMllK0zRwKr91l3N_Ik21SkDNDb22oZpo2J15hJKCc");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Viva la Vida</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">Coldplay</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKu1XYSFxMs72ALlQrAC42DvhDyOclH6Q9toi3_JEsEUInSrzBHHpcy6IqJQo_H91RwFTiA1CiT9OwWSI1fhtJ20C4hbg-fSrMZmZnWEcUJp5slEvWiin6uYECeIgTL_ddyXfx3DjYZ70fShvGXy9REzDs-Fg5NrF60_82wa9Kwi5f9_vy23iA8AlZsHnyi_kPToI_eamkaQ-zKeYQo9bsOlZHZVPLyZ1TEyIRFtOulwrFewehV59f4Z24Pqy9IYexHKFSqN6Zajs");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Shape of You</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">Ed Sheeran</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAv2yAHiW0kVOvcDA1MFusVxJ4ZP12qZlO5KKVl_eyF6mkuOZHxPXSQ55Mnjj-LJOJTF-xTym55ZbqpmUghIe3hklqgvKDVST4lZ1oCXYi3ZAiVfGO0qdU5Tq5bgh5BsgXZTGL81d1braJbb3DY_NDr7mGoCSQzrDKe1G7EydL0-SEFkhY7aKEfge1KU9pIxG8uGa8M6fwwTfF_yKzd12w89w_-TcOghfo15smcGkK0pZjvSSJAKcoD_c8jVNlsBlJWAyZgaap9tKk");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Shake It Off</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">Taylor Swift</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDobS3u7NhKWNBWTnQtfQtVATMoJgzPVIA1Kf6LVToTf0gCQ6oHY4DaD-A_2jYPVw4gLONTRjhEXfSHDMZl2y04uduEccAYaoWWt48kaYduZbEUJneqoInwjV4dT1ORbYuVnVVh89NA2lFwavGYxEc4Sscmt-6aF706sSQ0oDxYDFJPsn_VZ5t8stbGAio9MYGigrLBHdGAm3NMI84Zngb1hRf_Fp686Bkq6GUEcAAZtSIfk7nzWKpTrGZlK6S1FE4kCwpE_F7z_Ms");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Rolling in the Deep</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">Adele</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBV5P0gcObwFOZkQ0iPf3C3j2RdRo2OGvRGBAOtFQHBL7dKxIGlzJOLZV6r71WniaqWdspBLMQ-FGOuNKFbNGmnjOYuHtO0oXKsJrigwX7F_BKPftp1BIuY__iGlzDv0SBHeqywRq6tWDLmp_xBdpxqEDg-Jg0ZYXmCiIZ94gIwiy1rb23MKem68h9xe_hGzpPXRiy4Xpg81EjToSvJnMgsTM848l5Jjkg47LChmWT8RAK-DNKbXqX3UYEUe8u2bP3V-iL2SP4ozpQ");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Believer</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">Imagine Dragons</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDnYzu5L5dTIpDSOnqXd5cW_T3Qf0ccI3LyKn3JpoBC07rsbEuJuA8xhEn6yYuZhEUOW08v3h2nATtIJ4iKyZhYeee1eY7i75TUOaktk2_jSMGwVq7E6HWOa2tXngz4BIHPzr_1l0QCzOT7N0e8oDBvZNKr4VCakGjxe-FDqFNzz-Q43jAlGVq6hlMDc0bSeEesLhGNP6IAnpfTWNzaJlFhgXxvkGaXfi6O9iaa6hBeSAp7yFZPbIEEyFNhE7NUJBcQlY2exOBfKc");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Sugar</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">Maroon 5</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHjhIHjgiGVu8fXxKy1nDJfztrQPfl2XIUmh7VeseAYaRhkEke_FZXeGcUMjG4ILoHHE40NEscn_J1OE-siqNsH2i5GyUa6qSmJ3rrIhKIEIcunSoH6HVy6RcXHl8kZK4kd3gpl5Gn0ED-Q9mj17RXJzsFC_SamUuoQdLr4XfYWDaI_oIBOmWlFUEY_dtNOmkrDHb0SUjHOAR29b8PfIAw0sO0B6V2AgpTc8CG5Oz-a3z7Lhq6-ZGyk5S5_KMhtGcoXhQxhqaO3dI");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Sorry</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">Justin Bieber</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDmd2dAiC424OLjIEKXA7dituixQf8IDO6xj06gUxOxD9Js9mVvObY30d57E306192RmEQJPrtP0m-NqCCqnLaab8ySu0_QCYcvhT6CaRFkqYrWpG8lBPDpleIRhaP_SW1GZMOX6ymnIT4dt5_BJ4mffPl64t4_1OdMRiDm6PFvEWXwRLkJ5He3LBpIs-_kMHTwn0lsI2efAaT6gA4dhljj2jRa4tmGqCOjHbX7QymOXxemjCieWjs5xaiITPoV6bMUROLSBYmxXIA");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Umbrella</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">Rihanna</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#f9fcf8] px-4 min-h-[72px] py-2 justify-between">
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded size-14"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0JAvV4vAQX9iTvPLm61k2e5DTYFdzuSg2JJ6-ZJy-G4H6aT8Lsw7lS1tuqTjGzcwqY78zdS7Ea_Reed5FmSbjLSpByOpXCGC6UxlJtrmxz-CuJonPZtP9Do04zFAhH5Uc_o5FcaGCMOYyb565CvP-ETgej9NmNBPFQvC9abINy9ObCP-PM2Rp5fbDSJBJxcD0ZL-Y2Q4holNwPmTVh2R39m_P_M18jVs8K6wWmeMURg9Q-liJI5wE9iFKFk3AM4172juVkgIDOcQ");'
+            ></div>
+            <div class="flex flex-col justify-center">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal line-clamp-1">Hotline Bling</p>
+              <p class="text-[#54a145] text-sm font-normal leading-normal line-clamp-2">Drake</p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <div class="text-[#0f1d0c] flex size-7 items-center justify-center" data-icon="Play" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="@container">
+          <div class="relative flex w-full flex-col items-start justify-between gap-3 p-4 @[480px]:flex-row @[480px]:items-center">
+            <div class="flex w-full shrink-[3] items-center justify-between">
+              <p class="text-[#0f1d0c] text-base font-medium leading-normal">0:30 / 3:15</p>
+              <p class="text-[#0f1d0c] text-sm font-normal leading-normal @[480px]:hidden">50</p>
+            </div>
+            <div class="flex h-4 w-full items-center gap-4">
+              <div class="flex h-1 flex-1 rounded-sm bg-[#d2eacd]">
+                <div class="h-full w-[32%] rounded-sm bg-[#137000]"></div>
+                <div class="relative"><div class="absolute -left-2 -top-1.5 size-4 rounded-full bg-[#137000]"></div></div>
+              </div>
+              <p class="text-[#0f1d0c] text-sm font-normal leading-normal hidden @[480px]:block">50</p>
+            </div>
+          </div>
+        </div>
+        <div class="@container">
+          <div class="gap-2 px-4 grid-cols-[repeat(auto-fit, minmax(80px,_1fr))] grid">
+            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center">
+              <div class="rounded-full bg-[#e8f4e6] p-2.5">
+                <div class="text-[#0f1d0c]" data-icon="Rewind" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M223.77,58a16,16,0,0,0-16.25.53L128,109.14V71.84A15.91,15.91,0,0,0,103.52,58.5L15.33,114.66a15.8,15.8,0,0,0,0,26.68l88.19,56.16A15.91,15.91,0,0,0,128,184.16v-37.3l79.52,50.64A15.91,15.91,0,0,0,232,184.16V71.84A15.83,15.83,0,0,0,223.77,58ZM112,183.93,24.18,128,112,72.06Zm104,0L128.18,128,216,72.06Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-[#0f1d0c] text-sm font-medium leading-normal">Back</p>
+            </div>
+            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center">
+              <div class="rounded-full bg-[#e8f4e6] p-2.5">
+                <div class="text-[#0f1d0c]" data-icon="Play" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-[#0f1d0c] text-sm font-medium leading-normal">Play</p>
+            </div>
+            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center">
+              <div class="rounded-full bg-[#e8f4e6] p-2.5">
+                <div class="text-[#0f1d0c]" data-icon="FastForward" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M240.67,114.66,152.48,58.5A15.91,15.91,0,0,0,128,71.84v37.3L48.48,58.5A15.91,15.91,0,0,0,24,71.84V184.16A15.92,15.92,0,0,0,48.48,197.5L128,146.86v37.3a15.92,15.92,0,0,0,24.48,13.34l88.19-56.16a15.8,15.8,0,0,0,0-26.68ZM40,183.94V72.07L127.82,128Zm104,0V72.07L231.82,128Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-[#0f1d0c] text-sm font-medium leading-normal">Next</p>
+            </div>
+            <div class="flex flex-col items-center gap-2 bg-[#f9fcf8] py-2.5 text-center">
+              <div class="rounded-full bg-[#e8f4e6] p-2.5">
+                <div class="text-[#0f1d0c]" data-icon="Repeat" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M24,128A72.08,72.08,0,0,1,96,56H204.69L194.34,45.66a8,8,0,0,1,11.32-11.32l24,24a8,8,0,0,1,0,11.32l-24,24a8,8,0,0,1-11.32-11.32L204.69,72H96a56.06,56.06,0,0,0-56,56,8,8,0,0,1-16,0Zm200-8a8,8,0,0,0-8,8,56.06,56.06,0,0,1-56,56H51.31l10.35-10.34a8,8,0,0,0-11.32-11.32l-24,24a8,8,0,0,0,0,11.32l24,24a8,8,0,0,0,11.32-11.32L51.31,200H160a72.08,72.08,0,0,0,72-72A8,8,0,0,0,224,120Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-[#0f1d0c] text-sm font-medium leading-normal">Repeat</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 border-t border-[#e8f4e6] bg-[#f9fcf8] px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#0f1d0c]" href="#">
+            <div class="text-[#0f1d0c] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#54a145]" href="#">
+            <div class="text-[#54a145] flex h-8 items-center justify-center" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#54a145]" href="#">
+            <div class="text-[#54a145] flex h-8 items-center justify-center" data-icon="Bookmark" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M184,32H72A16,16,0,0,0,56,48V224a8,8,0,0,0,12.24,6.78L128,193.43l59.77,37.35A8,8,0,0,0,200,224V48A16,16,0,0,0,184,32Zm0,16V161.57l-51.77-32.35a8,8,0,0,0-8.48,0L72,161.56V48ZM132.23,177.22a8,8,0,0,0-8.48,0L72,209.57V180.43l56-35,56,35v29.14Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#54a145]" href="#">
+            <div class="text-[#54a145] flex h-8 items-center justify-center" data-icon="Gear" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="h-5 bg-[#f9fcf8]"></div>
+      </div>
+    </div>
+  </body>
+</html>
