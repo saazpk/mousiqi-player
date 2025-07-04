@@ -75,16 +75,7 @@
         height: 6px;
       }
       
-      .upload-btn {
-        background: linear-gradient(135deg, #54a145 0%, #137000 100%);
-        border-radius: 12px;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(83, 161, 69, 0.3);
-      }
-      .upload-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(83, 161, 69, 0.4);
-      }
+
       
       .glass-effect {
         backdrop-filter: blur(10px);
@@ -165,29 +156,25 @@
     <div id="notification" class="notification"></div>
 
     <!-- Welcome Banner -->
-    <div class="welcome-banner sticky top-0 z-50">
-      اہل وطن پر سلامتی ہو!
+    <div class="welcome-banner sticky top-0 z-50 flex items-center justify-between">
+      <div class="text-white flex size-8 shrink-0 items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+          <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+        </svg>
+      </div>
+      <div class="text-center flex-1">
+        اہل وطن پر سلامتی ہو!
+      </div>
+      <button id="upload-btn" class="text-white px-3 py-1 font-display text-xs font-semibold bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg transition-all" aria-label="Add your music files">
+        📁 Add Music
+      </button>
     </div>
 
     <div class="relative flex size-full min-h-screen flex-col bg-gradient-to-br from-[#f9fcf8] to-[#e8f4e6] justify-between group/design-root overflow-x-hidden">
       <div>
-        <!-- Header -->
-        <div class="flex items-center glass-effect p-4 pb-2 justify-between sticky top-12 z-40">
-          <div class="text-[#0f1d0c] flex size-12 shrink-0 items-center" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-              <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-            </svg>
-          </div>
-          
-          <div class="flex items-center gap-3">
-            <button id="upload-btn" class="upload-btn text-white px-4 py-2 font-display text-sm font-semibold" aria-label="Add your music files">
-              📁 Add Your Music
-            </button>
-          </div>
-        </div>
-        
+
         <!-- Currently Playing Track -->
-        <div class="flex items-center gap-4 glass-effect mx-4 my-2 px-4 min-h-[80px] py-3 justify-between track-item current-track-display" data-track="0">
+        <div class="flex items-center gap-4 glass-effect mx-4 mt-4 mb-2 px-4 min-h-[80px] py-3 justify-between track-item current-track-display" data-track="0">
           <div class="flex items-center gap-4">
             <div class="relative">
               <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl size-16 current-track-image shadow-lg" style='background-image: url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop");'></div>
