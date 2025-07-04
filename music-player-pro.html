@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+THIS SHOULD BE A LINTER ERROR<!DOCTYPE html>
 <html>
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -321,7 +321,29 @@
           this.audio = document.getElementById('audio-player');
           this.fileInput = document.getElementById('file-input');
           
-          this.tracks = [];
+          // Sample demo tracks - real audio files from public sources
+          this.demoTracks = [
+            {
+              title: "Chill Jazz Vibes",
+              artist: "Demo Artist",
+              url: "https://www.soundjay.com/misc/sounds/1_hour_of_rain.mp3",
+              type: "demo"
+            },
+            {
+              title: "Ocean Waves",
+              artist: "Nature Sounds",
+              url: "https://www.soundjay.com/misc/sounds/waves.wav",
+              type: "demo"
+            },
+            {
+              title: "Classical Piano",
+              artist: "Public Domain",
+              url: "https://www.soundjay.com/misc/sounds/piano.mp3",
+              type: "demo"
+            }
+          ];
+          
+          this.tracks = [...this.demoTracks]; // Start with demo tracks
           this.userTracks = [];
           
           this.init();
@@ -331,8 +353,9 @@
           this.setupAudio();
           this.setupEventListeners();
           this.setupVolumeControl();
+          this.renderPlaylist();
           this.updateDisplay();
-          this.showNotification('🎵 Music Player Pro loaded! Ready for your music files!', 'success');
+          this.showNotification('🎵 Music Player Pro loaded with demo tracks! Try them out or add your own!', 'success');
         }
         
         setupAudio() {
@@ -438,39 +461,39 @@
           event.target.value = '';
         }
         
-        renderPlaylist() {
-          const container = document.getElementById('playlist-container');
-          if (this.tracks.length === 0) {
-            container.innerHTML = `
-              <div class="text-[#54a145] font-body text-center py-8">
-                <p class="text-lg mb-2">🎶 Upload your music files to get started!</p>
-                <p class="text-sm">This player supports MP3, WAV, M4A, and more!</p>
-              </div>
-            `;
-            return;
-          }
-          
-          container.innerHTML = this.tracks.map((track, index) => `
-            <div class="flex items-center gap-4 glass-effect mx-1 my-1 px-4 min-h-[64px] py-3 justify-between track-item" data-track="${index}">
-              <div class="flex items-center gap-3">
-                <div class="bg-gradient-to-br from-[#54a145] to-[#137000] rounded-lg size-12 flex items-center justify-center text-white font-display font-bold text-sm">
-                  ♪
-                </div>
-                <div class="flex flex-col justify-center">
-                  <p class="text-[#0f1d0c] text-base font-display font-semibold leading-normal line-clamp-1">${track.title}</p>
-                  <p class="text-[#54a145] text-sm font-body leading-normal line-clamp-1">${track.artist}</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="text-xs bg-[#137000] text-white px-2 py-1 rounded-full font-display">Your Music</span>
-                <div class="text-[#0f1d0c] flex size-8 items-center justify-center control-btn track-play-btn bg-white shadow-md rounded-full" data-track="${index}">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" viewBox="0 0 256 256">
-                    <path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          `).join('');
+                 renderPlaylist() {
+           const container = document.getElementById('playlist-container');
+           if (this.tracks.length === 0) {
+             container.innerHTML = `
+               <div class="text-[#54a145] font-body text-center py-8">
+                 <p class="text-lg mb-2">🎶 Upload your music files to get started!</p>
+                 <p class="text-sm">This player supports MP3, WAV, M4A, and more!</p>
+               </div>
+             `;
+             return;
+           }
+           
+           container.innerHTML = this.tracks.map((track, index) => `
+             <div class="flex items-center gap-4 glass-effect mx-1 my-1 px-4 min-h-[64px] py-3 justify-between track-item" data-track="${index}">
+               <div class="flex items-center gap-3">
+                 <div class="bg-gradient-to-br from-[#54a145] to-[#137000] rounded-lg size-12 flex items-center justify-center text-white font-display font-bold text-sm">
+                   ${track.type === 'demo' ? '🎵' : '♪'}
+                 </div>
+                 <div class="flex flex-col justify-center">
+                   <p class="text-[#0f1d0c] text-base font-display font-semibold leading-normal line-clamp-1">${track.title}</p>
+                   <p class="text-[#54a145] text-sm font-body leading-normal line-clamp-1">${track.artist}</p>
+                 </div>
+               </div>
+               <div class="flex items-center gap-2">
+                 <span class="text-xs ${track.type === 'demo' ? 'bg-orange-500' : 'bg-[#137000]'} text-white px-2 py-1 rounded-full font-display">${track.type === 'demo' ? 'Demo Track' : 'Your Music'}</span>
+                 <div class="text-[#0f1d0c] flex size-8 items-center justify-center control-btn track-play-btn bg-white shadow-md rounded-full" data-track="${index}">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" viewBox="0 0 256 256">
+                     <path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"></path>
+                   </svg>
+                 </div>
+               </div>
+             </div>
+           `).join('');
           
           // Add event listeners to new track items
           document.querySelectorAll('.track-item').forEach((item) => {
